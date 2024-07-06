@@ -7,3 +7,12 @@ let accountState; // in Javascript variable can be declared and it will be undef
 
 console.log(accountId);
 console.table([accountId, accountName, accountPassword, accountCity, accountState])
+
+
+
+
+let x=2
+if (true){
+    let x = 3
+}
+console.log(x);
