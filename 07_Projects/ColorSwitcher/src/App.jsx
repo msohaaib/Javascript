@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -9,8 +7,25 @@ function App() {
   const body = document.querySelector("body")
   buttons.forEach( (button) =>{
     button.addEventListener('click' , function(e){
+      button.style.cursor = "pointer"
       if (e.target.id === "Gray"){
-        body.style.backgroundColor= "gray"
+        body.style.backgroundColor= e.target.id
+      }
+      else if (e.target.id === "Green"){
+        body.style.backgroundColor = "green"
+      }
+      else if (e.target.id === "Blue"){
+        body.style.backgroundColor = "blue"
+      }
+      else if (e.target.id === "Red"){
+        body.style.backgroundColor = "red"
+      }
+      else if (e.target.id === "Black"){
+        body.style.backgroundColor = "black"
+        body.style.color = "white"
+      }
+      else{
+        body.style.backgroundColor = "white"
       }
     })
   } )
