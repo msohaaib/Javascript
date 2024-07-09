@@ -5,26 +5,24 @@ function App() {
   const [count, setCount] = useState(0)
   const buttons = document.querySelectorAll('.btn')
   const body = document.querySelector("body")
+  
   buttons.forEach( (button) =>{
     button.addEventListener('click' , function(e){
       if (e.target.id === "Gray"){
         body.style.backgroundColor= e.target.id
       }
-      else if (e.target.id === "Green"){
+      if (e.target.id === "Green"){
         body.style.backgroundColor = e.target.id
       }
-      else if (e.target.id === "Blue"){
+      if (e.target.id === "Blue"){
         body.style.backgroundColor = e.target.id
       }
-      else if (e.target.id === "Red"){
+      if (e.target.id === "Red"){
         body.style.backgroundColor = e.target.id
       }
-      else if (e.target.id === "Black"){
+      if (e.target.id === "Black"){
         body.style.backgroundColor = e.target.id
         body.style.color = "white"
-      }
-      else{
-        body.style.backgroundColor = "white"
       }
     })
   } )
